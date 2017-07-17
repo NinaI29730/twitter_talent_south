@@ -4,6 +4,7 @@
       <div class="well user-list-wells">
         <div class="row">
           <div class="col-md-6">
+            <% if user.avatar.url != nil%>
             <%= image_tag user.avatar.url, class: "user-pic-md" %>
           </div>
           <div class="col-md-6">

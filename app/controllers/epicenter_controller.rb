@@ -14,6 +14,7 @@ class EpicenterController < ApplicationController
       if current_user.following.include?(tweet.user_id) || current_user.id == tweet.user_id 
         @following_tweets.push(tweet)
       end
+    end
   end
 
   def show_user
@@ -66,5 +67,4 @@ class EpicenterController < ApplicationController
   def all_users
     @users = User.all
   end
-end
 end
